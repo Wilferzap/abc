@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.nav {
+  display: list-item;
+  // justify-content: center;
+  height: 2rem;
+  width: 100%;
+  border-bottom: solid 1.5px white;
+  align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+
+  ul {
+    // padding-bottom: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.mainMenu {
+  display: flex;
+  // margin-bottom: 2rem;
+  float: right;
+
+  li {
+    margin: 0 5px;
+    font-size: 1rem;
+    list-style: none;
+    display: inline;
+    align-items: center;
+    // width: 4rem;
+    a {
+      color: whitesmoke;
+      text-decoration: none;
+      opacity: 70%;
+      padding: 7px 13px;
+      border-radius: 5%;
+
+      &:hover {
+        // text-decoration: underline;
+        // font-size: 1rem;
+        color: black;
+        opacity: 100%;
+        background-color: white;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.checkBtn {
+  font-size: 30px;
+  color: #fff;
+  float: left;
+
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.medida {
+  width: 100%;
+  height: 300px;
+}
+.fondo {
+  background-image: url(../img/FondoArt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.logoName {
+  width: 150px;
+  height: 150px;
+  border: solid 5px yellow;
+  border-radius: 3%;
+  // margin: auto;
+  margin-top: 30px;
+  margin-left: 50px;
+
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+
+.letraLogo {
+  text-align: left;
+  color: red;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+// tipografias
+
+// font-family: "Edu TAS Beginner", cursive;
+// font-family: "Montserrat", sans-serif;
+// font-family: "Poppins", sans-serif;
+// font-family: "PT Sans", sans-serif;
+// font-family: "Ubuntu", sans-serif;
+// font-family: "Work Sans", sans-serif;
+
+.tipo {
+  font-family: "PT Sans", sans-serif;
+}
+.tipo2 {
+  font-family: "Poppins", sans-serif;
+  border-left: solid 0.8px;
+  border-color: red;
+  margin-left: 200px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.aside {
+  width: 100%;
+  height: 100%;
+  padding-right: 20%;
+}
+
+.tituloAside {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.textAside {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+}
+
+@media (max-width: 952px) {
+  .nav {
+    padding-bottom: 0.5rem;
+  }
+  .nav ul li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkBtn {
+    display: block;
+    margin-top: -50px;
+    margin-left: 20px;
+    padding-left: 0%;
+  }
+  .mainMenu {
+    padding-left: 0px;
+  }
+  .nav ul {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    text-align: center;
+    padding-top: 5px 0;
+    left: -100%;
+    transition: 0.5s;
+  }
+  .nav ul li a {
+    display: block;
+    line-height: 5px;
+    width: 100%;
+  }
+
+  .logoName {
+    width: 100px;
+    height: 100px;
+    border: solid 3px yellow;
+    border-radius: 3%;
+    // margin: auto;
+    margin-top: 0px;
+    margin-left: 20px;
+
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+  }
+
+  .letraLogo {
+    text-align: left;
+    color: red;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .tipo2 {
+    margin-left: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .fondo {
+    background-image: url(../img/FondoArt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+
+  .aside {
+    width: 100%;
+    height: 200px;
+    // margin: 30px 0;
+    // margin-top: -50px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.984);
+  }
+  .tituloAside {
+    font-size: 20px;
+    color: black;
+  }
+
+  .textAside {
+    color: black;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .hola {
+    display: none;
+    margin-top: 150px;
+  }
+}
