@@ -7,17 +7,19 @@ import {
 } from "react-router-dom";
 
 import AutoresPage from "./pages/autoresPage";
-import Home from "./pages/home";
 import ErrorPage from "./pages/404";
+import HomePage from "./pages/homePage";
+import HistoriaPage from "./pages/historiaPage";
 
 const RouterFinal = () => {
   return (
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" Component={Home}></Route>
+          <Route exact path="/" Component={HomePage}></Route>
           <Route exact path="*" Component={ErrorPage}></Route>
           <Route exact path="/autores" Component={AutoresPage}></Route>
+          <Route exact path="/historia" Component={HistoriaPage}></Route>
         </Routes>
       </Router>
     </div>

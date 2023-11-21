@@ -27,7 +27,7 @@ const Nav = () => {
         </li>
 
         <li>
-          <Link to={"/explore"}>HISTORIA</Link>
+          <Link to={"/historia"}>HISTORIA</Link>
         </li>
       </ul>
     </nav>

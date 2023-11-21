@@ -1,9 +1,13 @@
 import React from "react";
 
+import NavGeneral from "../components/general/NavGeneral";
+
 const Autores = () => {
   return (
     <div>
-      <h1>Pagina en progreso</h1>
+      <div>
+        <NavGeneral></NavGeneral>
+      </div>
     </div>
   );
 };

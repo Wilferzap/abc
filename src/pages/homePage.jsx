@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../components/nav";
-import TextHome from "../components/textHome";
+import Nav from "../components/home/nav";
+import TextHome from "../components/home/textHome";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }} className="tipo">
       <div style={{ width: "100%", maxWidth: "1500px" }}>
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
